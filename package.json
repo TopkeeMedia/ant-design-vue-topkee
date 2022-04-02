@@ -53,10 +53,10 @@
     "lint:site": "eslint -c ./.eslintrc.js --fix --ext .jsx,.js,.ts,.tsx,vue ./site",
     "lint:style": "stylelint \"{site,components}/**/*.less\" --syntax less",
     "codecov": "codecov",
-    "routes": "node site/scripts/genrateRoutes.js",
+    "routes": "node site/scripts/generateRoutes.js",
     "tsc": "tsc --noEmit",
     "vue-tsc": "vue-tsc --noEmit",
-    "site": "npm run routes && ./node_modules/vite/bin/vite.js build site --base=https://next.antdv.com/",
+    "site": "npm run routes && ./node_modules/vite/bin/vite.js build site",
     "pub:site": "npm run site && node site/scripts/pushToOSS.js",
     "prepare": "husky install",
     "version": "node ./scripts/generate-version",
@@ -81,7 +81,6 @@
   "bugs": {
     "url": "https://github.com/vueComponent/ant-design-vue/issues"
   },
-  "homepage": "https://www.antdv.com/",
   "peerDependencies": {
     "vue": ">=3.2.0"
   },
@@ -153,7 +152,7 @@
     "docsearch.js": "^2.6.3",
     "duplicate-package-checker-webpack-plugin": "^3.0.0",
     "enquire-js": "^0.2.1",
-    "esbuild": "~0.12.29",
+    "esbuild": "0.14.29",
     "esbuild-loader": "^2.18.0",
     "escape-html": "^1.0.3",
     "eslint": "^8.3.0",
