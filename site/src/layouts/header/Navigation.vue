@@ -16,43 +16,7 @@
         {{ $t('app.header.menu.components') }}
       </router-link>
     </a-menu-item>
-    <a-menu-item v-if="isZhCN" key="surely-vue">
-      <a
-        href="https://www.surely.cool"
-        target="_blank"
-        rel="noopener noreferrer"
-        style="position: relative"
-      >
-        高级组件
-        <a-badge color="red" style="position: absolute; top: -35px; right: -15px" />
-      </a>
-    </a-menu-item>
-    <a-menu-item key="store">
-      <a
-        href="https://store.antdv.com/pro/"
-        target="_blank"
-        rel="noopener noreferrer"
-        style="position: relative"
-      >
-        {{ $t('app.header.menu.store') }}
-        <!-- <a-badge color="red" style="position: absolute; top: -35px; right: -15px" /> -->
-      </a>
-    </a-menu-item>
-    <a-menu-item v-if="isZhCN" key="geektime">
-      <a
-        href="https://time.geekbang.org/course/intro/100024601?code=KHKYcoBU6vZa8nMglg7AWfDxxi3BWrz9INAzAY3umPk%3D"
-        target="_blank"
-        rel="noopener noreferrer"
-        style="position: relative"
-      >
-        实战课程
-        <!-- <a-badge color="red" style="position: absolute; top: -35px; right: -15px" /> -->
-      </a>
-    </a-menu-item>
     <template v-if="isMobile">
-      <a-menu-item key="switch-lang" @click="$emit('langChange')">
-        {{ $t('app.header.lang') }}
-      </a-menu-item>
       <a-menu-item key="github">
         <a
           href="https://github.com/vueComponent/ant-design-vue"

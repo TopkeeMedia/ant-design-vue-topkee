@@ -14,14 +14,6 @@
       <a-select-option :value="antdVersion">{{ antdVersion }}</a-select-option>
       <a-select-option value="1.x" @click="changeVersion">1.x</a-select-option>
     </a-select>
-    <a-button
-      key="lang-button"
-      size="small"
-      class="header-button header-lang-button"
-      @click="onLangChange"
-    >
-      {{ $t('app.header.lang') }}
-    </a-button>
     <More />
     <Github />
   </template>

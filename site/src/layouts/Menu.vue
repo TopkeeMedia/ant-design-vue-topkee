@@ -60,13 +60,9 @@ export default defineComponent({
           [{ path: '/components/overview', title: '组件总览', enTitle: 'Components Overview' }],
         );
         const item = menus.find(m => m.path === props.activeMenuItem);
-        let title = props.isZhCN
-          ? 'Ant Design Vue - 一套企业级 Vue 组件库'
-          : 'Ant Design Vue — An enterprise-class UI components based on Ant Design and Vue.js';
+        let title = 'Ant Design Vue - 一套企业级 Vue 组件库';
         if (item && item.title) {
-          title = props.isZhCN
-            ? `${item.subtitle || ''} ${item.title} - Ant Design Vue`
-            : `${item.enTitle || item.title} - Ant Design Vue`;
+          title = `${item.subtitle || ''} ${item.title} - Ant Design Vue`;
         }
         document.title = title.trim();
       },

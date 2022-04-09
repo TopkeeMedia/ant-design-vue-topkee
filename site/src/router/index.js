@@ -54,11 +54,6 @@ const routes = [
         component: () => import('../vueDocs/introduce.zh-CN.md'),
       },
       {
-        path: 'vue/introduce',
-        meta: { enTitle: 'Ant Design of Vue', title: 'Ant Design of Vue', category: 'docs' },
-        component: () => import('../vueDocs/introduce.en-US.md'),
-      },
-      {
         path: 'vue/getting-started-cn',
         meta: { enTitle: 'Getting Started', title: '快速上手', category: 'docs' },
         component: () => import('../vueDocs/getting-started.zh-CN.md'),
@@ -74,20 +69,9 @@ const routes = [
         component: () => import('../vueDocs/customize-theme.zh-CN.md'),
       },
       {
-        path: 'vue/customize-theme',
-        meta: { enTitle: 'Customize Theme', title: '定制主题', category: 'docs' },
-        component: () => import('../vueDocs/customize-theme.en-US.md'),
-      },
-
-      {
         path: 'vue/customize-theme-variable-cn',
         meta: { enTitle: 'Dynamic Theme (Experimental)', title: '动态主题', category: 'docs' },
         component: () => import('../vueDocs/customize-theme-variable.zh-CN.md'),
-      },
-      {
-        path: 'vue/customize-theme-variable',
-        meta: { enTitle: 'Dynamic Theme (Experimental)', title: '动态主题', category: 'docs' },
-        component: () => import('../vueDocs/customize-theme-variable.en-US.md'),
       },
       {
         path: 'vue/migration-v2-cn',
@@ -95,19 +79,9 @@ const routes = [
         component: () => import('../vueDocs/migration-v2.zh-CN.md'),
       },
       {
-        path: 'vue/migration-v2',
-        meta: { enTitle: 'V1 to V2', title: '从 v1 到 v2', category: 'docs' },
-        component: () => import('../vueDocs/migration-v2.en-US.md'),
-      },
-      {
         path: 'vue/migration-v3-cn',
         meta: { enTitle: 'V2 to V3', title: '从 v2 到 v3', category: 'docs' },
         component: () => import('../vueDocs/migration-v3.zh-CN.md'),
-      },
-      {
-        path: 'vue/migration-v3',
-        meta: { enTitle: 'V2 to V3', title: '从 v2 到 v3', category: 'docs' },
-        component: () => import('../vueDocs/migration-v3.en-US.md'),
       },
       {
         path: 'vue/replace-date-cn',
@@ -115,19 +89,9 @@ const routes = [
         component: () => import('../vueDocs/replace-date.zh-CN.md'),
       },
       {
-        path: 'vue/replace-date',
-        meta: { enTitle: 'Custom Date Library', title: '自定义时间库', category: 'docs' },
-        component: () => import('../vueDocs/replace-date.en-US.md'),
-      },
-      {
         path: 'vue/i18n-cn',
         meta: { enTitle: 'Internationalization', title: '国际化', category: 'docs' },
         component: () => import('../vueDocs/i18n.zh-CN.md'),
-      },
-      {
-        path: 'vue/i18n',
-        meta: { enTitle: 'Internationalization', title: '国际化', category: 'docs' },
-        component: () => import('../vueDocs/i18n.en-US.md'),
       },
       {
         path: 'vue/faq-cn',
@@ -135,19 +99,9 @@ const routes = [
         component: () => import('../vueDocs/faq.zh-CN.md'),
       },
       {
-        path: 'vue/faq',
-        meta: { enTitle: 'FAQ', title: '常见问题', category: 'docs' },
-        component: () => import('../vueDocs/faq.en-US.md'),
-      },
-      {
         path: 'vue/download-cn',
         meta: { enTitle: 'Download Design Resources', title: '下载设计资源', category: 'docs' },
         component: () => import('../vueDocs/download.zh-CN.md'),
-      },
-      {
-        path: 'vue/download',
-        meta: { enTitle: 'Download Design Resources', title: '下载设计资源', category: 'docs' },
-        component: () => import('../vueDocs/download.en-US.md'),
       },
       {
         path: 'vue/sponsor-cn',
@@ -155,19 +109,9 @@ const routes = [
         component: () => import('../vueDocs/sponsor.zh-CN.md'),
       },
       {
-        path: 'vue/sponsor',
-        meta: { enTitle: 'Sponsor', title: '支持我们', category: 'docs' },
-        component: () => import('../vueDocs/sponsor.en-US.md'),
-      },
-      {
         path: 'vue/changelog-cn',
         meta: { enTitle: 'Change Log', title: '更新日志', category: 'docs' },
         component: () => import('../../../CHANGELOG.zh-CN.md'),
-      },
-      {
-        path: 'vue/changelog',
-        meta: { enTitle: 'Change Log', title: '更新日志', category: 'docs' },
-        component: () => import('../../../CHANGELOG.en-US.md'),
       },
       { path: '', redirect: '/docs/vue/introduce/' },
     ],

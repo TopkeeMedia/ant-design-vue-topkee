@@ -7,13 +7,6 @@
         <br />
         你可以将 Ant Design Vue 加入白名单，以便我们更好地提供服务。
       </template>
-      <template v-else>
-        We have detected that you may use AdBlock or Adblock Plus, which will affect the use of
-        normal functions (such as copying, expanding code, etc.)
-        <br />
-        You can add Ant Design Vue to the whitelist so that we can provide better services.
-      </template>
-
       <CloseOutlined class="close-icon" @click="visibleAdblockBanner = false" />
     </div>
     <a-popover

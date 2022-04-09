@@ -58,8 +58,8 @@ export default defineComponent({
     provide(GLOBAL_CONFIG, globalConfig);
     watch(
       () => route.path,
-      val => {
-        i18n.locale.value = isZhCN(val) ? 'zh-CN' : 'en-US';
+      () => {
+        i18n.locale.value = 'zh-CN';
       },
       { immediate: true },
     );

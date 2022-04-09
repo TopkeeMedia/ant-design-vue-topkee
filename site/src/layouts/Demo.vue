@@ -11,14 +11,12 @@
       <h2>{{ $t('app.component.examples') }}</h2>
     </section>
     <slot />
-    <!-- <GoogleAds v-if="showAd" :key="`goo-${route.path}`" /> -->
     <section class="markdown api-container" v-html="api"></section>
   </article>
 </template>
 <script lang="ts">
 import { defineComponent, computed } from 'vue';
 import { useRoute } from 'vue-router';
-// import GoogleAds from '../components/rice/GoogleAds.vue';
 
 const showAd = location.host.indexOf('antdv.com') > -1;
 export default defineComponent({
