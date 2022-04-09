@@ -104,11 +104,6 @@ const routes = [
         component: () => import('../vueDocs/download.zh-CN.md'),
       },
       {
-        path: 'vue/sponsor-cn',
-        meta: { enTitle: 'Sponsor', title: '支持我们', category: 'docs' },
-        component: () => import('../vueDocs/sponsor.zh-CN.md'),
-      },
-      {
         path: 'vue/changelog-cn',
         meta: { enTitle: 'Change Log', title: '更新日志', category: 'docs' },
         component: () => import('../../../CHANGELOG.zh-CN.md'),
