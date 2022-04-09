@@ -61,7 +61,7 @@ const routes = [
       {
         path: 'vue/getting-started',
         meta: { enTitle: 'Getting Started', title: '快速上手', category: 'docs' },
-        component: () => import('../vueDocs/getting-started.en-US.md'),
+        component: () => import('../vueDocs/getting-started.zh-CN.md'),
       },
       {
         path: 'vue/customize-theme-cn',
