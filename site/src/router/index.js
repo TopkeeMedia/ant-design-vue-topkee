@@ -111,6 +111,17 @@ const routes = [
       { path: '', redirect: '/docs/vue/introduce/' },
     ],
   },
+  {
+    path: '/design',
+    component: Layout,
+    children: [
+      {
+        path: 'vue/download-cn',
+        meta: { enTitle: 'Download Design Resources', title: '下载设计资源', category: 'docs' },
+        component: () => import('../vueDocs/download.zh-CN.md'),
+      },
+    ],
+  },
   { path: '/debugger', component: () => import('../../debugger') },
   { path: '/:lang(.*)', redirect: '/components/overview' },
 ];

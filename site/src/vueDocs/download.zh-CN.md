@@ -1,3 +1,5 @@
+目前我們還未提供 Vue 版本的設計頁面， 請設計師前往[Ant Design](https://ant.design/docs/spec/introduce-cn)查閱設計標準
+
 这里提供 Ant Design Vue 相关设计资源和设计工具的下载，更多设计资源正在整理和完善中。
 
 > 以下设计资源由[Ant Design](https://ant.design)官方开发并维护

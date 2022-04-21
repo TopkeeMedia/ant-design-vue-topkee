@@ -6,6 +6,9 @@
     :selected-keys="[activeMenuItem]"
     disabled-overflow
   >
+    <a-menu-item key="design">
+      <router-link :to="getLocalizedPathname('/design/vue/download', isZhCN)">设计</router-link>
+    </a-menu-item>
     <a-menu-item key="docs/vue">
       <router-link :to="getLocalizedPathname('/docs/vue/introduce', isZhCN)">
         {{ $t('app.header.menu.documentation') }}
@@ -55,7 +58,7 @@ export default defineComponent({
         } else if (modules[1] === 'docs') {
           activeMenuItem.value = `${modules[1]}/${modules[2]}`;
         } else {
-          activeMenuItem.value = 'home';
+          activeMenuItem.value = 'design';
         }
       },
       { immediate: true },
