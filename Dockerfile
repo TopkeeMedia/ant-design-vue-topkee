@@ -17,3 +17,4 @@ RUN chmod -R g=u /var/cache \
     && chmod g=u /run \
     && sed -i "s/listen       80/listen       8080/g" /etc/nginx/conf.d/default.conf
 COPY --chown=nginx:nginx --from=Builder /app/site/dist /usr/share/nginx/html/
+
