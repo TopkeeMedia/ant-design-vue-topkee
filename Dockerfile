@@ -17,3 +17,4 @@ RUN chmod -R g=u /var/cache \
     && chmod g=u /run
 COPY --chown=nginx:nginx --from=Builder /app/site/dist /usr/share/nginx/html/
 
+
